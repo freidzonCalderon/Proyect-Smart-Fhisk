@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../CSS/general.css">
+    <link rel="stylesheet" href="../CSS/vetAppointments.css">
+
+    <title>Vet Appointments</title>
+    
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h2 class="titleNavBar">MOKA</h2>
+            
+            <div>
+                <a href="subIndex.html" class="navbarOption navbarOptionMargin">INICIO</a>
+                <a href="vetAppointments.html" class="navbarOption navbarOptionMargin">VETERINARIA</a>
+                <a href="hotelReservations.html" class="navbarOption navbarOptionMargin">HOTEL</a>
+                <a href="settings.html" class="navbarOption navbarOptionMargin">CONFIGURACIONES</a> 
+            </div> 
+            
+            <h2 class="titleNavBar">Alejandro Guzmán</h2>   
+            
+        </nav>
+    </header>
+    
+    <h1 class="title">HOTEL</h1>
+   
+    <section>
+        <div class="optionsContainer">
+            <div class="filtersContainer">
+                    <input type="text" id="searchBar" class="searchBarInput" placeholder="Buscar reservación"> 
+                    <input type="number" id="roomNumberFilter" class="inputFilter" placeholder="No.Habitación">
+                    <select id="statusFilter" class="inputFilter">
+                        <option selected hidden>Seleccione un estado</option>
+                        <option value="1">Reservado</option>
+                        <option value="2">Pendiente</option>
+                        <option value="3">Cancelado</option>
+                        <option value="0">Todos</option>
+                    </select>  
+            </div>
+            <div class="btnContainer">
+                <a id="btnGotoGenerateAppointmentForm" href="hotelReservationsForm.html" class="btnGotoAppointmentForm">Crear reservación</a>
+            </div>
+        </div>
+        <div class="tableContainer">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Habitación</th>
+                        <th>Fecha de reservación</th>
+                        <th>Cliente</th>
+                        <th>No. Reservación</th>
+                        <th>Fecha entrada</th>
+                        <th>Fecha salida</th> 
+                        <th>Estado</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="borderStyle">
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            11/07/2022
+                        </td>
+                        <td>
+                            Brenda Eich
+                        </td>
+                        <td>
+                            0001
+                        </td>
+                        <td>
+                            20/07/2022
+                        </td>
+                        <td>
+                            23/07/2022
+                        </td>
+                        <td>
+                            Cancelado
+                        </td>
+                        <td>
+                            <a class="btnEvaluate" href="reservationDetail.html">Detalles</a>
+                        </td>
+                        <td>
+                            <a class="btnModify" href="hotelReservationsForm.html">Modificar</a>
+                        </td>
+                        <td>
+                            <a class="btnDelete">Eliminar</a>
+                        </td>
+                    </tr>
+                    <tr class="borderStyle">
+                        <td>
+                            2
+                        </td>
+                        <td>
+                            11/07/2022
+                        </td>
+                        <td>
+                            Aubrey Ross
+                        </td>
+                        <td>
+                            0002
+                        </td>
+                        <td>
+                            20/07/2022
+                        </td>
+                        <td>
+                            23/07/2022
+                        </td>
+                        <td>
+                            Reservado
+                        </td>
+                        <td>
+                            <a class="btnEvaluate" href="reservationDetail.html">Detalles</a>
+                        </td>
+                        <td>
+                            <a class="btnModify" href="hotelReservationsForm.html">Modificar</a>
+                        </td>
+                        <td>
+                            <a class="btnDelete">Eliminar</a>
+                        </td>
+                    </tr>
+                    <tr class="endRow">
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            11/07/2022
+                        </td>
+                        <td>
+                            Chris Brown
+                        </td>
+                        <td>
+                            0003
+                        </td>
+                        <td>
+                            20/07/2022
+                        </td>
+                        <td>
+                            23/07/2022
+                        </td>
+                        <td>
+                            Pendiente
+                        </td>
+                        <td>
+                            <a class="btnEvaluate" href="reservationDetail.html">Detalles</a>
+                        </td>
+                        <td>
+                            <a class="btnModify" href="hotelReservationsForm.html">Modificar</a>
+                        </td>
+                        <td>
+                            <a class="btnDelete">Eliminar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer class="footer">
+        <div>
+            <div class="footerContainer">
+                <div>
+                    <h3>MOKA</h3>
+                    <p>Telefono: +506 8888 8888</p>
+                    <p>WhatsApp: +506 6666 6666</p>
+                    <p>Correo electrónico: moka@gmail.com</p>
+                    <p>Dirección: San José, Costa Rica</p>
+                </div>
+                <div>
+                    <h3>Redes Sociales</h3>
+                    <div class="socialContainer">
+                        <a href="http://www.facebook.com" class="socialLink"><p>Facebook</p></a>
+                        <a href="http://www.instagram.com" class="socialLink"><p>Instagram</p></a>
+                        <a href="http://www.twitter.com" class="socialLink"><p>Twitter</p></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Power by</h3>
+                    <a href="../SmartFhisk/Proyecto LandingPage/index.html">
+                        <img src="../Media/IMG/logoSmartFhisk.webp" alt="Logo SmartFhisk" class="imgLogoFooter">
+                    </a>
+                </div>
+            </div>
+            <div class="footerCopyright">
+                <p>Copyright 2022 | MOKA / SmartFhisk | Todos los derechos reservados</p>
+            </div>       
+        </div>
+    </footer>
+</body>
+</html>

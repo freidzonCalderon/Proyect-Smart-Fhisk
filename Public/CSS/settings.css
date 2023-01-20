@@ -1,0 +1,29 @@
+.settingsCardsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.cardMargin{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #2C454B;
+}
+
+.btnGoto{
+    width: 100px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 10px;
+    background-color: #EA803F;
+    color: #fff;
+    text-decoration: none;
+}
+.btnGoto:hover{
+    background-color: #eb8a4e;
+}

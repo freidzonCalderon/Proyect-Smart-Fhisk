@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Generate appointment</title>
+        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../CSS/general.css">
+    <link rel="stylesheet" href="../CSS/vetAppointmentsForm.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h2 class="titleNavBar">MOKA</h2>
+            
+            <div>
+                <a href="subIndex.html" class="navbarOption navbarOptionMargin">INICIO</a>
+                <a href="vetAppointments.html" class="navbarOption navbarOptionMargin">VETERINARIA</a>
+                <a href="hotelReservations.html" class="navbarOption navbarOptionMargin">HOTEL</a>
+                <a href="settings.html" class="navbarOption navbarOptionMargin">CONFIGURACIONES</a> 
+            </div> 
+            
+            <h2 class="titleNavBar">Alejandro Guzmán</h2>   
+            
+        </nav>
+    </header>
+    <div class="mainContainer">
+        <div id="formTitle">
+            <h1 class="title">Crear cita</h1>
+        </div>
+        <div class="formContainer">
+            <div class="inputContainer">
+                <h2 class="subTitle">Fecha de la cita</h2>
+                    <label for="addAppointment" class="inputLabel" id="lblAddAppointment">Agendar cita</label>
+                    <input type="datetime-local" id="addAppointment" class="inputForm">
+            </div>
+    
+            <div class="inputContainer">
+                <h2 class="subTitle">Datos del dueño</h2>
+                    <label for="userName" class="inputLabel" id="lblUserName">Nombre</label>
+                    <input type="text" id="userName" placeholder="Ingrese el nombre" class="inputForm"> 
+                    <label for="userLastName" class="inputLabel" id="lblUserLastName">Apellido</label>
+                    <input type="text" id="userLastName" placeholder="Ingrese el apellido" class="inputForm">   
+                    <label for="userEmail" class="inputLabel" id="lblUserEmail">Correo electrónico</label>
+                    <input type="email" id="userEmail" placeholder="Ingrese el correo" class="inputForm">   
+                    <label for="userTel" class="inputLabel" id="lblUserTel">Número de teléfono</label>
+                    <input type="number" id="userTel" placeholder="Ingrese el número de teléfono" class="inputForm">
+            </div>
+            
+            <div  class="inputContainer">
+                <h2 class="subTitle">Datos de la mascota</h2>
+
+                    <label for="petName" class="inputLabel" id="lblPetName">Nombre</label>
+                    <input type="text" id="petName" placeholder="Ingrese el nombre de la mascota" class="inputForm">
+
+                    <label for="petRace" class="inputLabel" id="lblPetRace">Raza</label>
+                    <input type="text" id="petRace" placeholder="Ingrese la raza de su mascota" class="inputForm">
+
+            </div>
+        </div>
+            <div>
+                <h2 class="subTitle">Motivos de la cita</h2>
+                <div>
+                    <textarea id="motives" cols="100" rows="10" placeholder="Explique, brevemente, las razones de la cita" class="inputForm inputFormTextarea"></textarea>
+                </div>
+            </div>
+
+            <div class="btnContainer">
+                <button type="button" id="btnAccept" class="btnAccept">Aceptar</button>
+            </div>
+    </div>
+    <footer class="footer">
+        <div>
+            <div class="footerContainer">
+                <div>
+                    <h3>MOKA</h3>
+                    <p>Telefono: +506 8888 8888</p>
+                    <p>WhatsApp: +506 6666 6666</p>
+                    <p>Correo electrónico: moka@gmail.com</p>
+                    <p>Dirección: San José, Costa Rica</p>
+                </div>
+                <div>
+                    <h3>Redes Sociales</h3>
+                    <div class="socialContainer">
+                        <a href="http://www.facebook.com" class="socialLink"><p>Facebook</p></a>
+                        <a href="http://www.instagram.com" class="socialLink"><p>Instagram</p></a>
+                        <a href="http://www.twitter.com" class="socialLink"><p>Twitter</p></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Power by</h3>
+                    <a href="../SmartFhisk/Proyecto LandingPage/index.html">
+                        <img src="../Media/IMG/logoSmartFhisk.webp" alt="Logo SmartFhisk" class="imgLogoFooter">
+                    </a>
+                </div>
+            </div>
+            <div class="footerCopyright">
+                <p>Copyright 2022 | MOKA / SmartFhisk | Todos los derechos reservados</p>
+            </div>       
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/Controller/vetAppointmentsController.js"></script>
+</body>
+</html>

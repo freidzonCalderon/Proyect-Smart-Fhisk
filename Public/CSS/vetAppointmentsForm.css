@@ -1,0 +1,72 @@
+.mainContainer{
+    margin: 50px 300px;
+    padding: 50px;
+    border: 3px solid #082F32;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.subTitle{
+    text-align: left;
+    font-size: 22px;
+    color: #2C454B;
+}
+
+.inputForm{
+    font-size: 15px;
+    color: #082F32;
+    border: 1px solid #082F32;
+    border-radius: 10px;
+    padding: 7px;
+    align-items: center;
+    width: 300px;
+    margin: 10px 0;
+}
+
+.inputFormTextarea{
+    margin: 0 60px;
+    width: 1000px;
+    font-size: 15px;
+}
+
+.btnAccept{
+    width: 200px;
+    background-color:#EA803F;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.btnAccept:hover{
+    background-color:#eb8a4e;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.reportContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+}
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.btnContainer{
+    width: 100%;
+    text-align: right;
+}

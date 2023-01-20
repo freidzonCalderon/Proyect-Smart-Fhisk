@@ -1,0 +1,69 @@
+.reservationsContainer {
+    margin: 50px 300px;
+    width: 8    00px;
+    height: 500px;
+    padding: 80px;
+    border: 3px solid #082F32;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: block;
+}
+
+.infoTitle {
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+.dataContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #082F32;
+}
+
+.imgMascota {
+    height: 200px;
+    width: 200px;
+    border-radius: 126px;
+    margin-left: 30px;
+}
+
+.btnsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+}
+
+.btnStyle {
+    width: 200px;
+    font-size: 15px;
+    text-align: center;
+    margin: 10px auto;
+    border: 1px solid transparent;
+    border-radius: 17px;
+    padding: 10px 50px;
+    background-color: #EA803F;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btnStyle:hover{
+    background-color: #eb8a4e;
+}
+
+th {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    color: #082F32;
+}
+
+td {
+    padding: 5px 20px;
+}

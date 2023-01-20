@@ -1,0 +1,74 @@
+.appointmentDetailsContainer {
+    margin: 50px auto;
+    width: 600px;
+    height: 500px;
+    padding: 80px;
+    border: 3px solid #082F32;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: block;
+}
+
+.info {
+    margin-top: 5px;
+    font-size: 20px;
+    color: #2C454B;
+}
+
+.data{
+    margin-top: 0px;
+    font-size: 16px;
+}
+
+.infoTitle {
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+.dataContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dataMargins{
+    margin-left: 50px;
+}
+
+.imgMascota {
+    left: 394px;
+    width: 200px;
+    height: 200px;
+    border-radius: 126px;
+    position: absolute;
+    margin-left: 30px;
+}
+
+.btnsContainer {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    margin-top: 250px;
+    margin-right: 50px;
+}
+
+.btnStyle {
+    width: 100px;
+    font-size: 15px;
+    text-align: center;
+    margin: 10px auto;
+    border: 1px solid transparent;
+    border-radius: 17px;
+    padding: 10px 50px;
+    background-color: #EA803F;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btnStyle:hover{
+    background-color: #eb8a4e;
+}

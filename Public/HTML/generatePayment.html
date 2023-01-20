@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Payment Method</title>
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:wght@500&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../CSS/general.css">
+        <link rel="stylesheet" href="../CSS/payment.css">
+    </head>
+    <body>
+        
+            <header>
+                <nav class="navbar">
+                    <h2 class="titleNavBar">MOKA</h2>
+                    
+                    <div>
+                        <a href="subIndex.html" class="navbarOption navbarOptionMargin">INICIO</a>
+                        <a href="vetAppointments.html" class="navbarOption navbarOptionMargin">VETERINARIA</a>
+                        <a href="hotelReservations.html" class="navbarOption navbarOptionMargin">HOTEL</a>
+                        <a href="settings.html" class="navbarOption navbarOptionMargin">CONFIGURACIONES</a> 
+                    </div> 
+                    
+                    <h2 class="titleNavBar">Alejandro Guzmán</h2>   
+                    
+                </nav>
+            </header>
+        <section class=principalContainer>
+            <div class="container">
+                <h1 class=title>Método de pago</h1>
+                <form>
+
+
+                    <div class="paymentData">
+                        <label for="txtNombreTarjeta" id="lblNombreTarjeta">Nombre en la tarjeta: </label>
+                        <input type="text" id="txtNombreTarjeta" placeholder="Nombre del tarjetahabiente" class="inputBasic">
+                        
+                        <label for="numTarjeta" id="lblNumeroTarjeta">Número de tarjeta: </label>
+                        <input type="number" id="numTarjeta" placeholder="Número de tarjeta" class="inputBasic">
+                    </div>
+
+                    <div class="security">
+                        <div class="securityData">
+                            <label for="numVencimiento" id="lblDateVencimiento">Fecha de vencimiento: </label>
+                            <input class="inputBasic" type="text" id="DateVencimiento" placeholder="MM/YY" maxlength="9">
+                        </div>
+                        <div class="securityData">
+                            <label for="numCVC" id="lblNumCVC">CVC: </label>
+                            <input type="password" id="numCVC" placeholder="CVC" minlength="3" maxlength="4" class="inputBasic">
+                        </div>
+                    </div>
+
+                    <div class="btnsContainer">
+                        <div>
+                            <button type="button" id="btnRegistrarTarjeta" class="btnPrimary">Completar Pago</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="completarPago">
+                <h3 class="subTitle">Completar
+                    Monto:
+                    <p class="paragraph">23.000</p>
+                </h3>
+                <h3 class="subTitle">
+                    Precio original:
+                    <p class="paragraph">46.000</p>
+                </h3>
+                <h3 class="subTitle">
+                    Total:
+                    <p class="paragraph">23.000</p>
+                </h3>
+                <h3 class="subTitle">Al completar su compra acepta estas condiciones de uso.</h3>
+            </div>
+
+        </section>
+        <footer class="footer">
+            <div>
+                <div class="footerContainer">
+                    <div>
+                        <h3>MOKA</h3>
+                        <p>Telefono: +506 8888 8888</p>
+                        <p>WhatsApp: +506 6666 6666</p>
+                        <p>Correo electrónico: moka@gmail.com</p>
+                        <p>Dirección: San José, Costa Rica</p>
+                    </div>
+                    <div>
+                        <h3>Redes Sociales</h3>
+                        <div class="socialContainer">
+                            <a href="http://www.facebook.com" class="socialLink"><p>Facebook</p></a>
+                            <a href="http://www.instagram.com" class="socialLink"><p>Instagram</p></a>
+                            <a href="http://www.twitter.com" class="socialLink"><p>Twitter</p></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Power by</h3>
+                        <a href="../SmartFhisk/Proyecto LandingPage/index.html">
+                            <img src="../Media/IMG/logoSmartFhisk.webp" alt="Logo SmartFhisk" class="imgLogoFooter">
+                        </a>
+                    </div>
+                </div>
+                <div class="footerCopyright">
+                    <p>Copyright 2022 | MOKA / SmartFhisk | Todos los derechos reservados</p>
+                </div>       
+            </div>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="../JS/Controller/paymentController.js"></script>
+    </body>
+
+</html>

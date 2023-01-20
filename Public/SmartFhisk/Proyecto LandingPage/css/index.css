@@ -1,0 +1,100 @@
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    margin-top: 0%;
+    color: #FFF;
+    text-align: center;
+}
+
+#logo {
+    margin-top: 50px;
+    margin-bottom: 57px;
+    color: #C7334E;
+    size: 10px;
+    text-align: center;
+}
+
+img {
+    height: 150px;
+}
+
+/* Sección para la misión y visión */
+.container {
+    width: 100%;
+    display: flex;
+    background-color: #C7334E;
+    text-align: center;
+}
+
+.borderStyle {
+    border-left: 2px solid #FFF;
+}
+
+.caja {
+    padding: 4.5em;
+    width: 50%;
+    text-align: center;
+    color: #FFF;
+    font-family: Verdana;
+    font-size: 18px;
+}
+
+/* Sección para valores */
+.valores {
+    color: #C7334E;
+}
+
+.wrapper {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    color: #C7334E;
+    position: relative;
+    justify-content: space-evenly;
+    padding-bottom: 32px;
+}
+
+.icon {
+    height: 40px;
+    background-position: auto;
+    position: relative;
+}
+
+.valuesContainer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.valor{
+    display: flex;
+    align-items: center;
+}
+.valor h3{
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.valor::before,
+.valor::after {
+    position: absolute;
+    transform: translateX(-25%) translateY(-80%);
+    transition: 50ms transform;
+}
+
+.valor:hover::before {
+    content: attr(data-tooltip);
+    color: #FFF;
+    padding: .5rem;
+    border-radius: .3rem;
+    text-align: center;
+    width: 300px;
+    max-width: 100%;
+    background: #6B6B6B;
+}

@@ -1,0 +1,44 @@
+body {
+    margin: 0 auto;
+    background-color: #FFF;
+}
+
+.loginOption{
+    text-align: right;
+}
+
+.aboutUsContainer{
+    margin: 30px 0;
+    padding: 20px 200px;
+    background-color: #365253;
+    color: #FFF;
+    text-align: center;
+}
+
+.cardsContainer{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 100px;
+}
+
+.info{
+    width: 400px;
+}
+
+.imgCard{
+    width: 150px;
+}
+
+.googleMapsContainer{
+    background-image: url(../Media/IMG/googleMaps.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+}
+
+
+

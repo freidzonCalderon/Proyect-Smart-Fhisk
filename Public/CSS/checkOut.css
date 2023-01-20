@@ -1,0 +1,125 @@
+.container{
+    padding: 100px;
+    margin: 50px auto;
+    width: 900px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid #082F32;
+    border-radius: 20px;
+    padding: 7px;
+}
+
+.principalContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secondContainer {
+    padding-left: 80px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+
+.secondContainer,
+.clasification{
+    padding: 20px;
+    margin: 20px;
+}
+
+.thirdContainer{
+    display: flex;
+    flex-direction:row;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-right: 80px;
+}
+
+.commentsBox{
+    padding-right: 150px;
+}
+
+.subTitle{
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 22px;
+    color: #2C454B;
+}
+
+.box{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.labelStars{
+    font-size: 50px;
+    color: #082F32;
+}
+.labelStars:hover{
+    color:#276b70;
+}
+
+.input{
+    font-size: 15px;
+    color: #082F32;
+    border: 3px solid #082F32;
+    border-radius: 20px;
+    padding: 7px;
+    align-items: center;
+}
+.textarea{
+    margin-left: 150px;
+    font-size: 15px;
+}
+
+.basicInput{
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid #365253;
+    margin: 0 5px;
+    display: block;
+    border-radius: 10px;
+    width: 300px;
+    margin-bottom: 30px;
+    outline: none;
+    color: #082F32;
+}
+  
+.radioInput{ 
+    display:none;
+}
+
+.clasification{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    font-size: 16px;
+    color: #082F32;
+    padding-left: 250px;
+}
+
+input[type = "radio"],
+:checked ~ label{
+    color:#EA803F;
+}
+
+.btnAccept{
+    width: 200px;
+    height: 62px;
+    background-color:#EA803F;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.btnAccept:hover{
+    background-color:#eb8a4e;
+}

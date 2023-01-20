@@ -1,0 +1,117 @@
+
+.principalContainer {
+    margin: 50px auto;
+    width: 1352px;
+    height: 700px;
+    border: 3px solid #082F32;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 800px;
+}
+
+.paymentData {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+}
+
+.paymentData label,
+input {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.security {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inputBasic {
+    border-radius: 10px;
+    border: 2px solid #082F32;
+}
+
+.security label,
+input {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.securityData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+}
+
+.btnsContainer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.btnPrimary {
+    width: 235px;
+    height: 62px;
+    margin: 5% 100;
+    background-color: #EA803F;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 15px;
+}
+
+.btnPrimary:hover {
+    background-color: #eb8a4e;
+}
+
+.completarPago {
+    margin-top: 40px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #082F32;
+    width: 310px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.subTitle {
+    padding: 4px;
+    font-size: 16px;
+}
+
+.paragraph {
+    padding: 0;
+    margin: 0;
+}
+
+/*Desactivar comportamiento input number*/
+.numTarjeta::-webkit-inner-spin-button,
+.numTarjeta::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.numTarjeta {
+    -moz-appearance: textfield;
+}

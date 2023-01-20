@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Check Out</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:wght@500&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="../CSS/general.css">
+        <link rel="stylesheet" href="../CSS/checkOut.css">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <h2 class="titleNavBar">MOKA</h2>
+
+                <div>
+                    <a href="subIndex.html" class="navbarOption navbarOptionMargin">INICIO</a>
+                    <a href="vetAppointments.html" class="navbarOption navbarOptionMargin">VETERINARIA</a>
+                    <a href="hotelReservations.html" class="navbarOption navbarOptionMargin">HOTEL</a>
+                    <a href="settings.html" class="navbarOption navbarOptionMargin">CONFIGURACIONES</a>
+                </div>
+
+                <h2 class="titleNavBar">Alejandro Guzmán</h2>
+
+            </nav>
+        </header>
+        <section class="container">
+            <div class="principalContainer">
+                <h1 class="title">Check Out Hotel Moka</h1>
+            </div>
+            <div class="secondContainer">
+                <div class="box">
+                    <h2 class="subTitle">Propietario:</h2>
+                    <input type="text" id="txtUserName" placeholder="Nombre y apellidos" class="input basicInput">
+
+                    <input type="email" id="txtMail" placeholder="Correo electrónico" class="input basicInput">
+
+                    <input type="number" id="txtTel" placeholder="Número de teléfono" class="input basicInput">
+
+                    <input type="number" id="txtReservation" placeholder="Número de reservación"
+                        class="input basicInput">
+                </div>
+
+                <div class="clasification">
+                    <h2 class="subTitle">Calificación</h2>
+
+                    <input id="radio1" type="radio" name="stars" value="5" class="input radioInput">
+                    <label for="radio1" class="labelStars">★</label>
+
+                    <input id="radio2" type="radio" name="stars" value="4" class="input radioInput">
+                    <label for="radio2" class="labelStars">★</label>
+
+                    <input id="radio3" type="radio" name="stars" value="3" class="input radioInput">
+                    <label for="radio3" class="labelStars">★</label>
+
+                    <input id="radio4" type="radio" name="stars" value="2" class="input radioInput">
+                    <label for="radio4" class="labelStars">★</label>
+
+                    <input id="radio5" type="radio" name="stars" value="1" class="input radioInput">
+                    <label for="radio5" class="labelStars">★</label>
+                </div>
+            </div>
+
+            <div class="thirdContainer">
+                <div>
+                    <textarea id="comments" cols="60" rows="6" placeholder="Ingrese los comentarios acá"
+                        class="input textarea"></textarea>
+                </div>
+                <div>
+                    <button type="button" class="btnAccept">Aceptar</button>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div>
+                <div class="footerContainer">
+                    <div>
+                        <h3>MOKA</h3>
+                        <p>Telefono: +506 8888 8888</p>
+                        <p>WhatsApp: +506 6666 6666</p>
+                        <p>Correo electrónico: moka@gmail.com</p>
+                        <p>Dirección: San José, Costa Rica</p>
+                    </div>
+                    <div>
+                        <h3>Redes Sociales</h3>
+                        <div class="socialContainer">
+                            <a href="http://www.facebook.com" class="socialLink">
+                                <p>Facebook</p>
+                            </a>
+                            <a href="http://www.instagram.com" class="socialLink">
+                                <p>Instagram</p>
+                            </a>
+                            <a href="http://www.twitter.com" class="socialLink">
+                                <p>Twitter</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Power by</h3>
+                        <a href="../SmartFhisk/Proyecto LandingPage/index.html">
+                            <img src="../Media/IMG/logoSmartFhisk.webp" alt="Logo SmartFhisk" class="imgLogoFooter">
+                        </a>
+                    </div>
+                </div>
+                <div class="footerCopyright">
+                    <p>Copyright 2022 | MOKA / SmartFhisk | Todos los derechos reservados</p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="../JS/Controller/checkOutController.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign-up</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/general.css">
+        <link rel="stylesheet" href="../CSS/signUp.css">
+    </head>
+
+    <body>
+        <form>
+            <div class="signUpContainer">
+                <h1 class="signUpTitle">Registrarse</h1>
+                    <div class="groupInputs">
+                        <input id="txtUserName" type="text" placeholder="Ingrese su nombre" class="textboxCustomizelogin">
+                        <input id="txtCedula" type="text" placeholder="Ingrese su cédula" class="textboxCustomizelogin">
+                    </div>
+                    <div class="groupInputs">
+                        <input id="txtEmail" type="email" placeholder="Ingrese su correo" class="textboxCustomizelogin">
+                        <input id="txtTel" type="number" placeholder="Ingrese su teléfono" class="textboxCustomizelogin">
+                    </div>
+                    <div class="groupInputs">
+                        <input id="txtPassword" type="password" placeholder="Ingrese su contraseña" class="textboxCustomizelogin">
+                        <input id="txtPassConfirmation" type="password" placeholder="Confirme su contraseña" class="textboxCustomizelogin">
+                    </div>
+                    <div>
+                        <a id="btnSignUp" class="btnInicio">Registrarse</a>
+                    </div>
+                    <div>
+                        <a id="linkRegistrarte" href="logIn.html" class="link">Ya tienes cuenta, inicia sesión</a>
+                    </div>
+            </div>
+        </form>
+        <footer class="footer footerLogin">
+            <div class="footerCopyright">
+                <p>Copyright 2022 | MOKA / SmartFhisk | Todos los derechos reservados</p>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <script src="../JS/constants.js"></script>
+        
+        <script src="../JS/Services/signupServices.js"></script>
+        <script src="../JS/Controller/SignupController.js"></script>
+    </body>
+</html>

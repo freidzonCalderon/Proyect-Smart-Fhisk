@@ -1,0 +1,72 @@
+body {
+    margin: 0 auto;
+    background-color: #FFF;
+    font-family: Verdana;
+    color: #525252;
+}
+
+/* Estilos para el navbar */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30px;
+    padding: 25px 500px;
+    background-color: #FFF;
+    border-top: 10px solid #C7334E;
+    box-shadow: 0px 1px 3px 2px rgba(164, 82, 97, 25%);
+    text-align: center;
+}
+
+a {
+    color: #525252;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:hover {
+    color: #C7334E;
+}
+
+.active {
+    color: #C7334E;
+}
+
+/* Estilos para el footer */
+
+
+footer {
+    margin-top: 100px;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #6B6B6B;
+    padding: 10px 100px;
+    align-items: center;
+}
+
+.footerContainer h1 {
+    font-weight: bold;
+    font-size: 26px;
+    color: white;
+}
+
+.footerContainer .teamInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footerContainer .teamInfo .img {
+    height: 100px;
+    width: 100px;
+    background-image: url(../img/Logo.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    margin: 0 20px;
+}

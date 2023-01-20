@@ -1,0 +1,103 @@
+main{
+    width: 1600px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #C7334E;
+    font-size: 30px;
+    margin: 0;
+
+}
+
+#foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 1px 3px 3.5px rgba(164, 82, 97, 25%);
+}
+
+.aboutMe {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 30px;
+    border-bottom: 2px solid rgba(164, 82, 97, 25%);
+}
+
+.nombre {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.nombre p {
+    font-size: 16px;
+    margin: 16px 0px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    border-bottom: 2px solid rgba(164, 82, 97, 25%);
+}
+
+.expFor{
+    flex: 1;
+    padding: 20px 30px;
+    margin: 0px 0px 15px 0px;
+    border-right: 2px solid rgba(164, 82, 97, 25%);
+}
+
+.eduDebi {
+    flex: 1;
+    padding: 20px 30px;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.fortDebi {
+    display: flex;
+    width: 100%;
+}
+
+.boxFinal {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.correo {
+    padding: 20px;
+    text-align: center;
+}
+
+.telefono {
+    padding: 20px 150px;
+    border-left: 2px solid rgba(164, 82, 97, 25%);
+    border-right: 2px solid rgba(164, 82, 97, 25%);
+    text-align: center;
+}
+
+.direccion {
+    padding: 20px;
+    text-align: center;
+}
+
+.footerContainer .teamInfo .img {
+    height: 110px;
+    width: 110px;
+    background-image: url(../img/Logo.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    margin: 0 20px;
+}

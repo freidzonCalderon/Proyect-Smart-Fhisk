@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Reservación hotel</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../CSS/general.css">
+    <link rel="stylesheet" href="../CSS/hotelReservationsForm.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h2 class="titleNavBar">MOKA</h2>
+            
+            <div>
+                <a href="subIndex.html" class="navbarOption navbarOptionMargin">INICIO</a>
+                <a href="vetAppointments.html" class="navbarOption navbarOptionMargin">VETERINARIA</a>
+                <a href="hotelReservations.html" class="navbarOption navbarOptionMargin">HOTEL</a>
+                <a href="settings.html" class="navbarOption navbarOptionMargin">CONFIGURACIONES</a> 
+            </div> 
+            
+            <h2 class="titleNavBar">Alejandro Guzmán</h2>   
+            
+        </nav>
+    </header>
+    <section class="principalContainer">
+        <h1 class="title">Reserva Hotel Moka</h1>  
+        <div class="secondContainer">
+                <div class="box">
+                    <h2 class="subTitle">Fechas:</h2>   
+                    
+                    <label for="txtDateEntrada" id="lblDateEntrada" class="label">Fecha y hora de entrada: </label>
+                    <input type="datetime-local" id="txtDateEntrada" class="input">
+            
+                    <label for="txtDateSalida" id="lblDateSalida" class="label">Fecha y hora de salida: </label>
+                    <input type="datetime-local" id="txtDateSalida" class="input"> 
+
+                </div>
+                
+                <div class="box">
+                    <h2 class="subTitle">Propietario:</h2>
+                    <label for="txtNamePropietario" id="lblNamePropietario" class="label">Nombre propietario:</label>
+                    <input type="text" id="txtNamePropietario" placeholder="Nombre y apellidos" class="input">
+                    
+                    <label for="txemail" id="lblemail" class="label">Email:</label>
+                    <input type="email" id="txemail" placeholder="Correo electrónico" class="input">
+
+                    <label for="txtelefono" id="lbltelefono" class="label">Teléfono:</label>
+                    <input type="tel" id="txtelefono" placeholder="Número de teléfono" class="input">
+                </div>
+            </div>
+            <div class="secondContainer">
+                <div class="box">
+                    <h2 class="subTitle">Mascota:</h2>
+                    <label for="txtNameMascota" id="lblNameMascota" class="label">Nombre mascota:</label>
+                    <input type="text" id="txtNameMascota" placeholder="Nombre de la mascota" class="input">
+                    
+                    <label for="txtRaza" id="lblRaza" class="label">Raza:</label>
+                    <input type="text" id="txtRaza" placeholder="Raza" class="input">
+
+                    <label for="txtAlimento" id="lblAlimento" class="label">Alimento:</label>
+                    <input type="text" id="txtAlimento" placeholder="Alimento" class="input">
+                    
+                    <label for="txtSexo" id="lblSexo" class="label">Sexo: </label>
+                    <select id="txtSexo" class="input select">
+                        <option selected hidden>Seleccione una opción</option>
+                        <option value="1">Macho</option>
+                        <option value="2">Hembra</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <h2 class="subTitle">Servicios adicionales:</h2>
+                    <p>Seleccione los servicios que requiera:</p>
+                    <label for="chkBaño" class="label">
+                        <input type="checkbox" id="chkBaño" value="Baño" class="input">
+                        Baño
+                    </label>
+                    <label for="chkPeluqueria" class="label">
+                        <input type="checkbox" id="chkPeluqueria" value="Peluqueria" class="input">
+                        Peluquería
+                    </label>
+                    <label for="chkDientes" class="label">
+                        <input type="checkbox" id="chkDientes" value="Dientes" class="input">
+                        Cepillado de dientes
+                    </label>
+                    <label for="chkOidos" class="label">
+                        <input type="checkbox" id="chkOidos" value="Oidos" class="input">
+                        Limpieza de oídos
+                    </label>
+                    <label for="chkUñas" class="label">
+                        <input type="checkbox" id="chkUñas" value="Uñas" class="input">
+                        Corte de uñas
+                    </label>
+                    <label for="chkPaseo" class="label">
+                        <input type="checkbox" id="chkPaseo" value="Paseo" class="input">
+                        Paseo
+                    </label>
+                </div>
+            </div>
+            <div class="secondContainer">
+                <div>
+                    <textarea id="txtComentarios" cols="80" rows="8" placeholder="Ingrese los comentarios u observaciones" class="input textarea"></textarea>
+                </div>
+                <div>
+                    <button type="button" id="btnSolicitarReserva" class="btnAccept">Aceptar</button>
+                </div>
+            </div>       
+    </section>
+    <footer class="footer">
+        <div>
+            <div class="footerContainer">
+                <div>
+                    <h3>MOKA</h3>
+                    <p>Telefono: +506 8888 8888</p>
+                    <p>WhatsApp: +506 6666 6666</p>
+                    <p>Correo electrónico: moka@gmail.com</p>
+                    <p>Dirección: San José, Costa Rica</p>
+                </div>
+                <div>
+                    <h3>Redes Sociales</h3>
+                    <div class="socialContainer">
+                        <a href="http://www.facebook.com" class="socialLink"><p>Facebook</p></a>
+                        <a href="http://www.instagram.com" class="socialLink"><p>Instagram</p></a>
+                        <a href="http://www.twitter.com" class="socialLink"><p>Twitter</p></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Power by</h3>
+                    <a href="../SmartFhisk/Proyecto LandingPage/index.html">
+                        <img src="../Media/IMG/logoSmartFhisk.webp" alt="Logo SmartFhisk" class="imgLogoFooter">
+                    </a>
+                </div>
+            </div>
+            <div class="footerCopyright">
+                <p>Copyright 2022 | MOKA / SmartFhisk | Todos los derechos reservados</p>
+            </div>       
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/Controller/hotelReservationController.js"></script>
+</body>
+</html>
